@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Righteous&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Permanent Marker', cursive;
+    overflow: hidden;
+}
+.bg-video{
+    width: 100%;
+    height: 100vh;
+}
+.vidnet video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.vidnet::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1b1b1b;
+    opacity: 0.8;
+}
+.bg-error i{
+    margin: 0;
+    padding: 0;
+    font-size:175px;
+    color: rgb(230, 230, 230);
+    position: absolute;
+    top:45%;
+    left:32%;
+    transform: translate(-50%,-50%) rotate(10deg);
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+    /* box-shadow: 10px 10px 5px rgba(44, 44, 44, 0.815); */
+}
+.bg-error i:hover{
+    left: 30%;
+    box-shadow: none;
+    color: rgba(179, 179, 179, 0.63);
+    transform: rotate(0deg) scale(1.2);
+}
+@media screen and (max-width:640px){
+    .bg-error i{
+        visibility: hidden;
+    }
+}
+.text-body{
+    max-width: 500px;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: rgb(230, 230, 230);
+    text-align: center;
+}
+.text-body h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 152px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.text-body p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 42px;
+}
+.text-body small{
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+}
